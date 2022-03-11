@@ -1,87 +1,87 @@
 body {
-    font-family: 'Lato', sans-serif; 
-    font-weight: 400;
-    line-height: 1.7;
-    color: $color-gray-dark;  
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-dark;
 }
 
 .heading-primary {
-    overflow: hidden;
-    display: block;    
-    text-transform: capitalize;
+  overflow: hidden;
+  display: block;
+  text-transform: capitalize;
 
-    &--main {
-        display: block;
-        color: $color-white;
-        text-transform: uppercase;
-        letter-spacing: 3.2rem;
-        font-size: 6rem;
-        font-weight: 500;
-        animation: moveFromLeft 1s ease-in-out;
-        animation-delay: .5s;
+  &--main {
+    display: block;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 3.2rem;
+    font-size: 6rem;
+    font-weight: 500;
+    animation: moveFromLeft 1s ease-in-out;
+    animation-delay: 0.5s;
 
-
-        @include respond(phone) {
-            letter-spacing: 1rem;
-            font-size: 5rem;
-        }
-    
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
     }
-    
-    &--sub {
-        margin-bottom: 5rem;
-        font-weight: 300;
-        display: block;
-        color: $color-white;
-        font-size: 1.7rem;
-        letter-spacing: 1.8rem;
-        animation: moveFromRight 1s ease-in-out;
-        animation-delay: .5s;
+  }
 
-        @include respond(phone) {
-            letter-spacing: .5rem;
-        }
-    
+  &--sub {
+    margin-bottom: 5rem;
+    font-weight: 300;
+    display: block;
+    color: $color-white;
+    font-size: 1.7rem;
+    letter-spacing: 1.8rem;
+    animation: moveFromRight 1s ease-in-out;
+    animation-delay: 0.5s;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
     }
+  }
 }
 
 .heading-secondary {
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 700;    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    display: inline-block;
-    -webkit-background-clip: text;
-    color: transparent;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s ease-in;
+  letter-spacing: 2px;
 
-    transition: all .2s ease-in;
-    letter-spacing: 2px;
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
 
-    @include respond(tab-port) {
-        font-size: 2.5rem;
-    }
+  @include respond(phone) {
+    font-size: 2rem;
+    max-width: 50rem;
+  }
 
-    @include respond(phone) {
-        font-size: 2rem;
-        max-width: 50rem;
-    }
-    
-
-    &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-    }
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
 }
 
 .heading-tertiary {
-    font-size: $default-font-size;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .paragraph {
-    font-size: $default-font-size;
+  font-size: $default-font-size;
 
-    &:not(:last-child) {
-        margin-bottom: 3rem;
-    }
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }

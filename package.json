@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "node-sass sass/main.scss css/mystyle.css -w",
-    "compile:sass": "node-sass sass/main.scss css/mystyle.comp.css",
-    "concat:css": "concat -o css/mystyle.concat.css css/mystyle.comp.css",
-    "prefix:css": "postcss --use autoprefixer -c options.json css/mystyle.concat.css -o css/mystyle.prefix.css",
-    "compress:css": "node-sass css/mystyle.prefix.css css/mystyle.css --output-style compressed"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -c options.json css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed"
   },
   "keywords": [],
   "author": "",
